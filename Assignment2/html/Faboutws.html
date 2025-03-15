@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=412, initial-scale=1.0">
+    <title>About Workshops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            background-color: #4c7793;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .main{
+            max-width: 450px;
+            height: 100vh; /* Ensures full fit in the viewport */
+            background: url("C:/Users/NEHA/Downloads/image 25.png") no-repeat center center;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px;
+            width: 90%;
+            max-width: 380px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .workshop-item {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 1rem;
+        }
+
+        .workshop-item:hover {
+            background: rgba(255, 255, 255, 0.7);
+            transform: scale(1.03);
+        }
+
+        .back-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        @media (max-width: 420px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .back-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                bottom: 20px;
+            }
+
+            .workshop-item {
+                padding: 10px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>About Workshops:</h1>
+            <button class="workshop-item">My Workshops</button>
+            <button class="workshop-item">Saved Workshops</button>
+            <button class="workshop-item">Workshops Attended</button>
+            <button class="workshop-item">Progress Tracker</button>
+        </div>
+    </div>
+
+    <a href="Fprofile.html" class="back-btn">&#8592;</a>
+</body>
+</html>

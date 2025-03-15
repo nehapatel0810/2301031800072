@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=412, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #4c7793;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 380px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+            max-height: 700px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background: white;
+            color: #333;
+        }
+
+        .about-button, .logout-button, .delete-button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px 0;
+            width: 50%;
+        }
+
+        .about-button:hover, .logout-button:hover, .delete-button:hover {
+            background-color: #2563eb;
+        }
+
+        .profile-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding: 0 20px;
+        }
+
+        .icon-container img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #507abc;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #3b5b98;
+        }
+
+        .add-note{
+            width: 25px;
+            height: 25px;
+            margin-top: 100px;
+            margin-left: 850px;
+        }
+
+        .dot{
+            width: 25px;
+            height: 25px;
+            margin-top: 100px;
+            margin-right: 570px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 420px) and (max-height: 917px) {
+            .container {
+                max-width: 95%;
+                padding: 30px;
+            }
+
+            .back-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+
+            .profile-logo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .about-button, .logout-button, .delete-button {
+                padding: 8px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="icon-container">
+        <a href="Faddnote.html">
+            <img src="C:\Users\NEHA\Pictures\Screenshots\plus2.png" alt="Add Note" class="add-note">
+        </a>
+        <a href="F3dot.html">
+            <img src="C:\Users\NEHA\Pictures\Screenshots\3dot2.png" alt="3 Dot" class="dot">
+        </a>
+    </div>
+
+    <div class="container">
+        <img src="C:\Users\NEHA\Downloads\image.png" alt="Profile Picture" class="profile-logo">
+        <h1>Welcome [name]</h1>        
+        
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" required>
+
+            <a href="Faboutws.html">
+                <button type="button" class="about-button">About Workshop</button>
+            </a>
+            <a href="Fhome.html">
+                <button type="button" class="logout-button">Log Out</button>
+            </a>
+            <a href="Fsignupshort.html">
+                <button type="button" class="delete-button">Delete Account</button>
+            </a>
+        </form>
+    </div>
+
+    <a href="Fdashboard.html" class="back-btn">&#8592;</a>
+
+</body>
+</html>

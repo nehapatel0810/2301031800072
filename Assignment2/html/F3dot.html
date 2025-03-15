@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=412, height=917, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #4c7793;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #638ca8;
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 350px;
+            height: 80%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .menu-item {
+            margin-right: 500px;
+            width: 50%;
+            background: #f0f0f0;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 1rem;
+        }
+
+        .menu-item:hover {
+            background: #ddd;
+            transform: scale(1.03);
+        }
+
+        /* Back icon */
+        .back-icon {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        .back-icon:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* 🔹 Media Query for Adjustments */
+        @media (max-width: 412px) {
+            .container {
+                width: 95%;
+                height: 85%;
+                padding: 25px;
+            }
+
+            .back-icon {
+                bottom: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .menu-item {
+                padding: 10px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <button class="menu-item">About Us</button>
+        <button class="menu-item">Privacy Policy</button>
+        <button class="menu-item">Terms of Service</button>
+        <button class="menu-item">Contact Support</button>
+        <button class="menu-item">Share Link</button>
+        <button class="menu-item">Feedback</button>
+        <button class="menu-item">Rate Us</button>
+    </div>
+
+    <!-- Back icon at center-bottom -->
+    <a href="Fprofile.html" class="back-icon">&#8592;</a>
+</body>
+</html>

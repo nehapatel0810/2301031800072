@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=412, height=917, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #b6cdd0;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .course-container {
+            width: 95%;
+            max-width: 380px;
+            background: rgb(47, 91, 117);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .course-item {
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+            background-color: rgb(127, 180, 211);
+        }
+
+        .course-item:hover {
+            background-color: rgb(169, 212, 236);
+            transform: scale(1.02);
+        }
+
+        .course-item img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Back Icon */
+        .back-btn {
+            margin-left: 685px;
+            position: fixed;
+            bottom: 20px;
+            left: 50px;
+            background-color: #507abc;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 412px) and (max-height: 917px) {
+            .course-container {
+                width: 98%;
+            }
+
+            .course-item img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .back-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="course-container">
+        <h1>Available Courses</h1>
+
+        <div class="course-item">
+            <img src="C:\Users\NEHA\Downloads\image (1).png" alt="Web Development">
+            <a href="Fdemo.html"><h2>Introduction to Web Development</h2></a>
+        </div>
+        
+        <div class="course-item">
+            <img src="C:\Users\NEHA\Downloads\image 3.png" alt="Public Speaking">
+            <h2>Master in Public Speaking</h2>
+        </div>
+
+        <div class="course-item">
+            <img src="C:\Users\NEHA\Downloads\image (2).png" alt="Photography">
+            <h2>Photography Basics: Master Your DSLR</h2>
+        </div>
+    </div>
+
+    <!-- Back Icon -->
+    <a href="Fdashboard.html" class="back-btn">&#8592;</a> 
+</body>
+</html>

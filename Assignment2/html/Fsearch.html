@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=412, height=917, initial-scale=1.0">
+    <title>Workshop Categories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #6797b7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 412px;
+            height: 100%;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .search-bar {
+            width: 100%;
+            max-width: 350px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller boxes */
+            gap: 15px;
+            width: 100%;
+            max-width: 500px;
+            padding-bottom: 50px; /* Space for back button */
+        }
+
+        .category-item {
+            background: white;
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+
+        .category-item img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 8px;
+        }
+
+        /* Back icon */
+        .back-icon {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 22px;
+            color: white;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        .back-icon:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* 🔹 Media Query for Mobile */
+        @media (max-width: 412px) {
+            .content {
+                padding: 12px;
+            }
+
+            .search-bar {
+                max-width: 320px;
+            }
+
+            .back-icon {
+                bottom: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .category-container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller for small screens */
+                gap: 12px;
+            }
+
+            .category-item {
+                padding: 10px;
+            }
+
+            .category-item img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <input type="text" class="search-bar" placeholder="Search any workshop...">
+        <h2>Category</h2>
+        <div class="category-container">
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 9.png" alt="Technology">
+                <h2>Technology</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 10.png" alt="Business & Marketing">
+                <h2>Business & Marketing</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 11.png" alt="Creative & Design">
+                <h2>Creative & Design</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 12.png" alt="Writing & Communication">
+                <h2>Writing & Communication</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 13.png" alt="Health & Wellness">
+                <h2>Health & Wellness</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 14.png" alt="Education">
+                <h2>Education</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 15.png" alt="Personal Development">
+                <h2>Personal Development</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 16.png" alt="Art & Music">
+                <h2>Art & Music</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 17.png" alt="Coding & Programming">
+                <h2>Coding & Programming</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 18.png" alt="Career Development">
+                <h2>Career Development</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 19.png" alt="Finance">
+                <h2>Finance</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 20.png" alt="Lifestyle & Hobbies">
+                <h2>Lifestyle & Hobbies</h2>
+            </div>
+            <div class="category-item">
+                <img src="C:\Users\NEHA\Downloads\image 21.png" alt="Community & Social Causes">
+                <h2>Community & Social Causes</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back icon at center-bottom -->
+    <a href="Fdashboard.html" class="back-icon">&#8592;</a>
+</body>
+</html>

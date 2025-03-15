@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=412, height=917, initial-scale=1.0">
+    <title>Create Your Workshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #4c7793;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 380px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .header {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        .form-container {
+            width: 100%;
+            max-height: 600px; /* Set fixed height for scrolling */
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-size: 14px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background: white;
+            color: #333;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .publish-button {
+            margin-bottom: 30px;
+            width: 50%;
+            padding: 12px;
+            background-color: #16366c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .publish-button:hover {
+            background-color: #314974;
+        }
+
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #507abc;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #7c93c5;
+        }
+
+        /* Mobile View Adjustments */
+        @media (max-width: 412px) and (max-height: 917px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            label {
+                font-size: 13px;
+            }
+
+            input, textarea {
+                font-size: 13px;
+            }
+
+            .publish-button {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .back-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+
+            .form-container {
+                max-height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Create Your Workshop</h1>
+        </div>
+        <div class="form-container">
+            <form>
+                <label for="title">Workshop Title:</label>
+                <input type="text" id="title" required>
+
+                <label for="date">Date:</label>
+                <input type="text" id="date" placeholder="dd/mm/yyyy" required>
+
+                <label for="time">Time:</label>
+                <input type="text" id="time" placeholder="Indian time" required>
+
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" placeholder="in hours only" required>
+
+                <label for="platform">Platform:</label>
+                <input type="text" id="platform" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" rows="4" required></textarea>
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" required>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" placeholder="Free / Indian Rupees" required>
+
+                <label for="capacity">Capacity of Participants:</label>
+                <input type="text" id="capacity" required>
+    
+                <button type="submit" class="publish-button">Publish</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <a href="Fdashboard.html" class="back-btn">&#8592;</a> 
+</body>
+</html>

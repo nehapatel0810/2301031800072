@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=917, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #4c7793;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            background: rgb(160, 179, 184);
+            border-radius: 15px;
+            padding: 40px;
+            width: 90%;
+            max-width: 380px;
+            height: 80%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            flex-grow: 1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            resize: none;
+        }
+
+        /* Back icon */
+        .back-icon {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        .back-icon:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* 🔹 Media Query for Adjustments */
+        @media (max-width: 412px) {
+            .container {
+                width: 95%;
+                height: 85%;
+                padding: 30px;
+            }
+
+            .back-icon {
+                bottom: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            textarea {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add your notes here</h1>
+        <textarea placeholder="Write your notes..."></textarea>
+    </div>
+
+    <!-- Back icon at center-bottom -->
+    <a href="Fprofile.html" class="back-icon">&#8592;</a>
+</body>
+</html>

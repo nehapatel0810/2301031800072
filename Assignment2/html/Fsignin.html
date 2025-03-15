@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #6797b7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative; /* For back button positioning */
+        }
+
+        .container {
+            background: #94bbd5;
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .signin-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+        }
+
+        .google-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .google-btn img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .signin-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .signin-text a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        /* Back Button at Bottom Center */
+        .back-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            color: white;
+            background-color: #3b82f6;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+        }
+
+        .back-btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Mobile view (412x917) */
+        @media (max-width: 412px) and (max-height: 917px) {
+            .container {
+                width: 95%;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            input {
+                font-size: 14px;
+            }
+            .signin-btn, .google-btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .back-btn {
+                bottom: 20px; /* Adjusted for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign In</h1>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <a href="Fdashboard.html" class="signin-btn">Sign In</a>
+        </form>
+
+        <div class="divider">or</div>
+
+        <button class="google-btn">
+            <img src="C:\Users\NEHA\Downloads\image 2.png" alt="Google Logo">
+            Sign In with Google
+        </button>
+
+        <p class="signin-text">
+            <a href="#">Forgot password?</a>
+        </p>
+
+        <p class="signin-text">
+            Don't have an account? <a href="Fsignupshort.html">Sign up</a>
+        </p>
+    </div>
+
+    <!-- Back Button at Bottom -->
+    <a href="Fhome.html" class="back-btn">&#8592;</a>
+
+</body>
+</html>
